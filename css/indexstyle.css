@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Pen+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Lobster&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: ivory;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            font-size: 40px;
+            color: red;
+            transition: font-size 2s;
+        }   
+
+        .submenu {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            position: fixed;
+            bottom: 10px;
+            right: 0; 
+        }
+        .submenu img {
+            width: 50px;
+        }
+        audio {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            opacity: 0.6;
+        }
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin: 0;
+            /* border: 1px solid gray; */
+            list-style: none;
+            display: inline-block;
+            word-spacing: 30px;
+
+        }
+        
+        .sitetitle {
+            font-family: 'Lobster', cursive;
+            font-size: 40px;
+            padding: 20px;
+        }
+        .detail {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        

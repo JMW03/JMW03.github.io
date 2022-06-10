@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Pen+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jua&family=Lobster&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: ivory;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            font-size: 40px;
+            color: red;
+            transition: font-size 2s;
+        }   
+
+        .submenu {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            position: fixed;
+            bottom: 10px;
+            right: 0; 
+        }
+        .submenu img {
+            width: 50px;
+        }
+        audio {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            opacity: 0.6;
+        }
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin: 0;
+            /* border: 1px solid gray; */
+            list-style: none;
+            display: inline-block;
+            word-spacing: 30px;
+
+        }
+        .main {
+            /* border: 1px solid black; */
+            float: left;
+            position: relative;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            top: 50px;
+            left: 50px;
+            
+        }
+        .mainitem {
+            position: absolute;
+        }
+        .mainitem:nth-child(1) {
+            top: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0.5;
+        }
+        .mainitem:nth-child(2) {
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+            opacity: 0.5;
+        }
+        .mainitem:nth-child(3) {
+            top: 200px;
+            left: 200px;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .mainitem:nth-child(1):hover {
+            opacity: 1;
+            transition: opacity 2s;
+        }
+        .mainitem:nth-child(2):hover {
+            top: 100px;
+            left: 100px;
+            z-index: 4;
+            opacity: 1;
+            transition: opacity 2s;
+        }
+        .mainitem:nth-child(3):hover {
+            top: 200px;
+            left: 200px;
+            z-index: 5;
+            opacity: 1;
+            transition: opacity 2s;
+        }
+        .welcome:nth-child(n) {
+            width: 500px;
+            height: 200px;
+        }
+        .welcome:nth-child(1) {
+            font-family: 'Jua', sans-serif;
+            font-size: 50px;
+            border: 1px solid black;
+            background-color:white;
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .welcome:nth-child(2) {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute;
+            right: 85px;
+            bottom: 85px;
+            z-index: 1;
+        }
+        .welcome:nth-child(3) {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute; 
+            right: 70px;
+            bottom: 70px;
+            z-index: 0;
+        }
+        .welcome:nth-child(4) {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute; 
+            right: 55px;
+            bottom: 55px;
+            z-index: -1;
+        }
+
+        .content1 {
+            float: right;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            position: relative;
+            top: 100px;
+            right: 150px;
+        }
+        .explain:nth-child(n) {
+            width: 500px;
+            height: 200px;
+        }
+        .explain:nth-child(1) {
+            font-family: 'Jua', sans-serif;
+            font-size: 50px;
+            border: 1px solid black;
+            background-color:white;
+            position: absolute;
+            right: 100px;
+            top: 55px;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .explain:nth-child(2) {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute;
+            right: 85px;
+            top: 70px;
+            z-index: 1;
+        }
+        .explain:nth-child(3) {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute; 
+            right: 70px;
+            top: 85px;
+            z-index: 0;
+        }
+        .explain:nth-child(4) {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute; 
+            right: 55px;
+            top: 100px;
+            z-index: -1;
+        }
+
+        .content2 {
+            margin-top: -50px;
+            float: right;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            position: relative;
+            top: 50px;
+            right: 150px;
+        }
+
+        .sitetitle {
+            font-family: 'Lobster', cursive;
+            font-size: 40px;
+            padding: 20px;
+        }
+        .detail {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 30px;
+            padding: 20px;
+        }
+        .submenu {
+            list-style: none;
+            float: right;
+        }
