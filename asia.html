@@ -8,40 +8,65 @@
     <link rel="stylesheet" href="./css/samestyle.css">
     <style>
         .screen1 {
-            background-image: url(./images/asiabg.jpg);
+            background-image: url(./images/seoulbg.jpg);
             background-position-y: -300px;
         }
         .screen2 {
             background-color:rgba(255, 0, 0, 0.29)
         }
+        .mainitem1:nth-child(1) {
+            background-image: url(./images/lottetower.png);
+            background-size: 500px;
+            background-position-x: -120px;
+
+        }
+        .mainitem2:nth-child(1) {
+            background-image: url(./images/lotteworld.jpg);
+            background-size: 500px;
+            background-position-x: -100px;
+        }
 
     </style>
 </head>
 <body>
-    <div class="screen1" 
->
+    <div class="pages">
+        <div class="sidemenu">
+            <h3>TRAVEL</h3>
+        </div>
+        <ul>
+            <li class="detail" id="asia"><a href="asia.html" target="main">ASIA</a></li>
+            <li class="detail" id="eurupe"><a href="eurupe.html" target="main">EURUPE</a></li>
+            <li class="detail" id="america"><a href="america.html" target="main">AMERICA</a></li>
+            <li class="detail" id="all"><a href="allpage.html" target="main">ALL</a></li>
+        </ul>
+    </div>
+    <div id="1stpage" class="screen1">
         <div class="starttitle">
-            <h1>ASIA</h1>            
+            <h1>ASIA</h1> 
+            <h2>SEOUL</h2>         
         </div>     
     </div>
-    <div class="screen2">         
+    <div id="2ndpage" class="screen2">         
         <div class="main1">
             <div class="mainitem1"></div>
             <div class="mainitem1">
-                <h2>Statue of Liberty</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed ratione ab animi numquam beatae vero, dolorum adipisci ad, nobis voluptates optio! Eligendi dolorem voluptatum at alias neque aspernatur dignissimos.</p>
+                <h2>Lotte World Tower</h2>
+                <div class="psize"><p>Lotte World is a major recreation complex in Seoul, South Korea. It consists of the world's largest indoor theme park, an outdoor amusement park called "Magic Island", an artificial island inside a lake linked by monorail, shopping malls, a luxury hotel, a Korean folk museum, sports facilities, and movie theaters. Opened on July 12, 1989, Lotte World receives 7.3 million visitors each year.</p></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7772867238955!2d127.10173701524367!3d37.51317062980805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca50a915f665b%3A0xabeb10cd5efdfce2!2z66Gv642w7JuU65Oc7YOA7JuM!5e0!3m2!1sko!2skr!4v1655128024405!5m2!1sko!2skr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
         </div>
         <div class="main2">
-                <div class="mainitem2"></div>
+            <div class="mainitem2"></div>
             <div class="mainitem2">
             <aside class="explain2">
-                <h2>Statue of Liberty</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed ratione ab animi numquam beatae vero, dolorum adipisci ad, nobis voluptates optio! Eligendi dolorem voluptatum at alias neque aspernatur dignissimos.</p>
+                <h2>Lotte World Tower</h2>
+                <p>The Lotte World Tower is a 555.7-metre (1,823 ft), 123-story skyscraper located in Sincheon-dong, Songpa District, Seoul, South Korea. It opened to the public on April 3, 2017, and is currently the tallest building in South Korea and the sixth tallest in the world.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8644178647314!2d127.0937896348877!3d37.51111579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5a7250efe81%3A0x433df2c1fec03b98!2z66Gv642w7JuU65Oc!5e0!3m2!1sko!2skr!4v1655128074714!5m2!1sko!2skr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </aside>
         </div>
         </div>
-
+            
         </div>
     </div>
     <footer>

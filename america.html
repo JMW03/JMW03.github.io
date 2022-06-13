@@ -9,37 +9,62 @@
     <style>
         .screen1{
             background-image: url(./images/americabg.jpg);
+            background-size: 100% 651px;
         }
         .screen2{
             background-color:rgba(0, 191, 255, 0.199)
         }
+        .mainitem1:nth-child(1) {
+    background-image: url(./images/nylandmark.jpg);
+    background-position-x: -250px;
+    
+}
+.mainitem2:nth-child(1) {
+    background-image: url(./images/timesquare.jpg);
+    background-size: 400px;
+    background-position-x: -50px;
+}
     </style>
 </head>
 <body>
-    <div class="screen1" 
->
+    <div class="pages">
+        <div class="sidemenu">
+            <h3>TRAVEL</h3>
+        </div>
+        <ul>
+            <li class="detail" id="asia"><a href="asia.html" target="main">ASIA</a></li>
+            <li class="detail" id="eurupe"><a href="eurupe.html" target="main">EURUPE</a></li>
+            <li class="detail" id="america"><a href="america.html" target="main">AMERICA</a></li>
+            <li class="detail" id="all"><a href="allpage.html" target="main">ALL</a></li>
+        </ul>
+    </div>
+    <div id="1stpage" class="screen1">
         <div class="starttitle">
-            <h1>AMERICA</h1>          
+            <h1>AMERICA</h1> 
+            <h2>NEW YORK</h2>         
         </div>     
     </div>
-    <div class="screen2">         
+    <div id="2ndpage" class="screen2">         
         <div class="main1">
             <div class="mainitem1"></div>
             <div class="mainitem1">
-                <h2>Statue of Liberty</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed ratione ab animi numquam beatae vero, dolorum adipisci ad, nobis voluptates optio! Eligendi dolorem voluptatum at alias neque aspernatur dignissimos.</p>
+                <h2>Central Park</h2>
+                <div class="psize"><p>Central Park is an urban park in New York City, between the Upper West and Upper East Sides of Manhattan. It is the fifth largest park in the city, covering 843 acres (341 ha). It is the most visited urban park in the United States, with an estimated 42 million visitors annually as of 2016, and is the most filmed location in the world.</p></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12085.731147666042!2d-73.97792841382503!3d40.77449861920049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2z7IS87Yq465-0IO2MjO2BrA!5e0!3m2!1sko!2skr!4v1655122502601!5m2!1sko!2skr" width="250" height="250" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
         </div>
         <div class="main2">
-                <div class="mainitem2"></div>
+            <div class="mainitem2"></div>
             <div class="mainitem2">
             <aside class="explain2">
-                <h2>Statue of Liberty</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed ratione ab animi numquam beatae vero, dolorum adipisci ad, nobis voluptates optio! Eligendi dolorem voluptatum at alias neque aspernatur dignissimos.</p>
+                <h2>Times Square</h2>
+                <p>Times Square is a major commercial intersection, tourist destination, entertainment center, and neighborhood in Midtown Manhattan, New York City. It is formed by the junction of Broadway, Seventh Avenue and 42nd Street. Together with adjacent Duffy Square, Times Square is a bowtie-shaped space five blocks long between 42nd and 47th Streets.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.182286059711!2d-73.98666912988722!3d40.75801531339305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2z7YOA7J6E7KaIIOyKpO2AmOyWtA!5e0!3m2!1sko!2skr!4v1655123942604!5m2!1sko!2skr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </aside>
         </div>
         </div>
-
+            
         </div>
     </div>
     <footer>

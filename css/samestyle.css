@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jua&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jua&family=Lobster&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jua&family=Lobster&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jua&family=Lobster&family=Permanent+Marker&family=Shadows+Into+Light&family=Teko:wght@300&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -8,12 +9,22 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    font-size: 40px;
+    color: red;
+    transition: font-size 2s;
+}   
 .screen1 {
     position: relative;
     border: 1px solid black;
     width: 100%;
     height: 651px;
 }
+
 .screen2 {
     position: relative;
     width: 100%;
@@ -22,8 +33,6 @@ body::-webkit-scrollbar {
 .starttitle {
     font-family: 'Permanent Marker', cursive;
     font-size: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 80%;
     text-align: center;
     position: absolute;
@@ -31,13 +40,63 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(128, 128, 128, 0.786);
+    line-height: 50px;
 }
-footer img {
+.starttitle h2 {
+    font-size: 50px;
+}
+.starttitle:hover {
+    opacity: 0;
+    transition: opacity 3s;
+}
+.sidemenu h3 {
+    text-align: center;
+    font-size: 50px;
+}
+.pages {
+    position: fixed;
+    z-index: 99;
+    top: 10px;
+    right: -110px;
+    background-color:beige;
+    overflow: hidden;
+    font-family: 'Teko', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    border-radius: 20px 20px 20px 20px;
+}
+.pages ul{
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    width: 130px;
+    
+}
+.pages:hover {
+    right: 10px;
+    height: 631px;
+    transition: all 0.8s ease-in-out;
+}
+footer img{
     position: fixed;
     width: 100px;
     height: 80px;
     bottom: 5px;
     right: 5px;
+}
+footer .pages {
+    position: fixed;
+    width: 100px;
+    height: 80px;
+    bottom: 5px;
+    right: 5px;
+    float: right;
+    list-style: none;
 }
 .main1 {
     position: absolute;
@@ -48,8 +107,9 @@ footer img {
     overflow: hidden;
 }   
 .main1:hover {
-    width: 1050px;
-    transition: width 4s;
+    width: 1500px;
+    height: 500px;
+    transition: all 4s;
 
 
 }
@@ -61,7 +121,14 @@ footer img {
     height: 250px;
     border-radius: 50%;
     float: left;
-    background-image: url(../images/zamerica.jpg);
+}
+.psize {
+    max-width: 1000px;
+}
+.mainitem1:nth-child(2) iframe {
+    position: absolute;
+    right: 50px;
+    z-index: 99;
 }
 .mainitem1:nth-child(2) {
     margin-left: 300px;
@@ -78,8 +145,9 @@ footer img {
     overflow: hidden;
 }   
 .main2:hover {
-    width: 1050px;
-    transition: width 4s;
+    width: 1500px;
+    height: 500px;
+    transition: all 4s;
 
 }
 .mainitem2:nth-child(1) {
@@ -89,13 +157,17 @@ footer img {
     height: 250px;
     border-radius: 50%;
     float: left;
-    background-image: url(../images/zamerica.jpg);
 }
 .mainitem2:nth-child(2) {
     margin-left: 300px;
     padding-left: 400px;
     padding: 30px;
     float: left;
+}
+.mainitem2:nth-child(2) iframe {
+    position: absolute;
+    right: 50px;
+    z-index: 99;
 }
 .mainitem1:nth-child(2) h2 {
     font-family: 'Bebas Neue', cursive;
